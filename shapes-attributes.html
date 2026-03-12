@@ -8,15 +8,16 @@
         <a-scene>
             
     <a-sky
-        color="lightgreen"
+        color="lightblue"
     ></a-sky>
             
-    <a-torus 
+    <a-torus
         position="-2 4 -5"
         color="green" 
-        arc="270" 
+        arc="200" 
         radius="1" 
         radius-tubular="0.2"
+        
     ></a-torus>
     
 <!--
@@ -27,7 +28,16 @@ https://aframe.io/docs/1.1.0/primitives/a-cone.html
     <a-cone 
         position="2 4 -5"
         color="red"
+        radius-bottom="1"
+        radius-top="0.1"
     ></a-cone>
+
+     <a-cylinder
+        position="-1 2 -5"
+        color="orange"
+        height="2"
+        scale="0.4 2 0.4"
+    ></a-cylinder>
 
 <!--
 Hmm. What 3D shape has four sides? 
@@ -46,7 +56,16 @@ You will need to mess with it's attributes.
 
 Put it at position="10 -5 -30"
 -->
-
+<a-torus-knot
+        position="10 -5 -30"
+        p="7" 
+        q="8" 
+        radius="19" 
+        radius-tubular="1"
+        rotaton="90 0 0"
+        color="lightgreen"
+        
+    ></a-torus-knot>
     
         </a-scene>
     </body>

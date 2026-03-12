@@ -6,7 +6,8 @@
     </head>
     <body>
         <a-scene>
-            
+          <a-sky src="mountaintop.jpg" color="lightblue"></a-sky>
+               
             
 <!--
     Change the rotation for each of these shapes. 
@@ -18,18 +19,19 @@
     <a-cylinder 
         position="-2 3 -5"
         color="red"
-        rotation="0 0 45"
+        rotation="90 0 180"
     ></a-cylinder>
   
     <a-box 
         position="2 3 -5"
         color="green"
-        rotation="0 0 0"
+        rotation="90 0 45"
     ></a-box>
     
     <a-box 
         position="0 1 -5"
         color="orange"
+        rotation="90 0 45"
     ></a-box>
     
     <!-- 
@@ -39,6 +41,8 @@
     <a-torus 
         position="0 -1 -5"
         color="blue"
+        rotation="180 0 0"
+        arc="200"
     ></a-torus>
     
         </a-scene>
